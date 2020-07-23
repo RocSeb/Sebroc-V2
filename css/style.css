@@ -176,39 +176,59 @@
     right: 0;
   }
   
-  /*===== HOME =====*/
-  .home{
-    height: calc(100vh - 3rem);
-    row-gap: 1rem;
+  /*=== Accueil ===*/
+  .home img{
+    width: 100vw;
+    height: 100vh;
   }
-  .home__data{
-    align-self: center;
-  }
-  .home__title{
-    font-size: var(--big-font-size);
-    margin-bottom: var(--mb-5);
-  }
-  .home__title-color{
-    color: var(--first-color);
-  }
-  .home__social{
-    display: flex;
-    flex-direction: column;
-  }
-  .home__social-icon{
-    width: max-content;
-    margin-bottom: var(--mb-2);
-    font-size: 1.5rem;
-    color: var(--second-color);
-  }
-  .home__social-icon:hover{
-    color: var(--first-color);
-  }
-  .home__img{
+
+  #logo{
     position: absolute;
-    right: 0;
-    bottom: 0;
-    width: 295px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  #logo path:nth-child(2){
+    stroke-dasharray: 1692px;
+    stroke-dashoffset: 1692px;
+    animation: svg-anim 2s ease forwards 0.5s;
+  }
+
+  #logo path:nth-child(3){
+    stroke-dasharray: 219px;
+    stroke-dashoffset: 219px;
+    animation: svg-anim 3.5s ease forwards 1s;
+  }
+
+  #logo path:nth-child(4){
+    stroke-dasharray:659px;
+    stroke-dashoffset: 659px;
+    animation: svg-anim 3.5s ease forwards 1.5s;
+  }
+
+  #logo path:nth-child(5){
+    stroke-dasharray: 297px;
+    stroke-dashoffset: 297px;
+    animation: svg-anim 3.5s ease forwards 2s;
+  }
+
+  #logo path:nth-child(6){
+    stroke-dasharray: 151px;
+    stroke-dashoffset: 151px;
+    animation: svg-anim 3.5s ease forwards 2.5s;
+  }
+
+  #logo path:nth-child(7){
+    stroke-dasharray: 212px;
+    stroke-dashoffset: 212px;
+    animation: svg-anim 3.5s ease forwards 3s;
+  }
+
+  @keyframes svg-anim{
+    to{
+      stroke-dashoffset: 0;
+    }
   }
   
   /*BUTTONS*/
@@ -236,7 +256,7 @@
     justify-self: center;
   }
   .about__img img{
-    width: 200px;
+    width: 800px;
     border-radius: .5rem;
   }
   
@@ -304,25 +324,8 @@
   }
   
   /* ===== CONTACT =====*/
-  .contact__input{
-    width: 100%;
-    font-size: var(--normal-font-size);
-    font-weight: var(--font-semi);
-    padding: 1rem;
-    border-radius: .5rem;
-    border: 1.5px solid var(--second-color);
-    outline: none;
-    margin-bottom: var(--mb-4);
-  }
-  .contact__button{
-    display: block;
-    border: none;
-    outline: none;
-    font-size: var(--normal-font-size);
-    cursor: pointer;
-    margin-left: auto;
-  }
   
+
   /* ===== FOOTER =====*/
   .footer{
     background-color: #000;

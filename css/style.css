@@ -232,16 +232,33 @@
   }
   
   /*BUTTONS*/
-  .button{
-    display: inline-block;
-    background-color: var(--first-color);
-    color: #fff;
-    padding: .75rem 2.5rem;
-    font-weight: var(--font-semi);
-    border-radius: .5rem;
+  .btn{
+    width: 150px;
+    padding: 15px 10px;
+    margin: 20px;
+    background: rgb(37, 37, 37);
+    border: none;
+    border-radius: 25px;
+    box-shadow: -7px -7px 20px 0 rgb(0, 0, 0, 0.7),
+                7px 7px 20px 0 rgba(0, 0, 0, 0.2),
+                inset -7px -7px 20px 0 rgba(0, 0, 0, 0.7), 
+                inset 7px 7px 20px 0 rgba(255, 255, 255, 0.2);
   }
-  .button:hover{
-    box-shadow: 0 10px 36px rgba(0,0,0,.15);
+
+  .btn:hover{
+    border: none;
+    box-shadow: 0 -7px 10px 0 rgb(0, 0, 0, 1),
+                 7px 7px 20px 0 rgba(65, 65, 65, 0.7),
+                inset -7px -7px 20px 0 rgba(0, 0, 0, 1), 
+                inset 7px 7px 20px 0 rgba(0, 0, 0, 0.5);
+  }
+
+  .btn a {
+    color: rgb(50, 207, 207);
+    font-size: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
   }
   
   /* ===== ABOUT =====*/
@@ -324,7 +341,11 @@
   }
   
   /* ===== CONTACT =====*/
-  
+  .contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 
   /* ===== FOOTER =====*/
   .footer{

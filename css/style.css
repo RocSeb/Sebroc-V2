@@ -45,6 +45,7 @@
   }
   body{
     margin: var(--header-height) 0 0 0;
+    width: 100vw;
     background-color: var(--third-color);
     font-family: var(--body-font);
     font-size: var(--normal-font-size);
@@ -120,6 +121,11 @@
     align-items: center;
     font-weight: var(--font-semi);
   }
+
+  .nav img{
+    max-height: 40px;
+    width: auto;
+  }
   @media screen and (max-width: 768px){
     .nav__menu{
       position: fixed;
@@ -179,14 +185,22 @@
   /*=== Accueil ===*/
   .home img{
     width: 100vw;
+    height: auto;
+  }
+
+  .logo__content{
+    background-image: url(../img/balloon.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100vw;
     height: 100vh;
+    display: flex;
+    justify-content: center;
   }
 
   #logo{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    
   }
 
   #logo path:nth-child(2){
@@ -404,7 +418,8 @@
     }
   
     .home{
-      height: 100vh;
+      height: auto;
+      
     }
     .home__data{
       align-self: flex-end;

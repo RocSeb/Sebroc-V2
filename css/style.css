@@ -181,7 +181,7 @@
   .show{
     right: 0;
   }
-  
+
   /*=== Accueil ===*/
   .home img{
     width: 100vw;
@@ -197,10 +197,6 @@
     height: 100vh;
     display: flex;
     justify-content: center;
-  }
-
-  #logo{
-    
   }
 
   #logo path:nth-child(2){
@@ -276,6 +272,7 @@
   }
   
   /* ===== ABOUT =====*/
+  
   .about__container{
     row-gap: 2rem;
     text-align: center;

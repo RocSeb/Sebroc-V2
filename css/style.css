@@ -307,7 +307,7 @@
     padding: .5rem 1rem;
     margin-bottom: var(--mb-4);
     border-radius: .5rem;
-    box-shadow: 0 4px 25px rgba(14,36,49,.15);
+    box-shadow: 0 4px 20px rgba(50, 207, 207, 1);
   }
   .skills__icon{
     font-size: 2rem;
